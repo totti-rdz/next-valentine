@@ -2,18 +2,21 @@
 
 import { useSearchParams } from "next/navigation";
 import H1 from "@/components/H1";
+import { StringHelper } from "@/helper/StringHelper";
+
+const defaultTitle = "will you be my valentine?";
 
 const Title = () => {
   const searchParams = useSearchParams();
   const valentineName = searchParams.get("v");
 
   const title = valentineName
-    ? "will you be my valentine?"
-    : "Will you be my valentine?";
+    ? defaultTitle
+    : StringHelper.capitalize(defaultTitle);
 
   return (
     <>
-      {valentineName && <H1>{valentineName},</H1>}
+      {valentineName && <H1>{StringHelper.capitalize(valentineName)},</H1>}
       <H1>{title}</H1>
     </>
   );

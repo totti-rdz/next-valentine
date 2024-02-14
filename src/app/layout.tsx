@@ -31,6 +31,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="h-[100svh] bg-pink-200 p-5">{children}</div>
+        <div className="bg-pink-200 text-right px-2">
+          gifs by{" "}
+          <a
+            href="https://www.instagram.com/milkmochabear"
+            className="text-pink-500"
+          >
+            @milkmochabear
+          </a>
+        </div>
       </body>
       <Analytics />
     </html>

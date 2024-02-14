@@ -6,13 +6,13 @@ const imageSrc = "https://media.tenor.com/18cWVLMRwm0AAAAi/bear.gif";
 export default function Home() {
   return (
     <main className="flex h-full flex-col items-center justify-between">
-      <div className="flex flex-col">
+      <div className="flex flex-1 flex-col">
         <div className="mb-4">
           <h1 className="text-center text-4xl font-bold ">
             Will you be my valentine?
           </h1>
         </div>
-        <div className="grid place-content-center">
+        <div className="-mb-4 flex flex-1 flex-col items-center justify-end">
           <Image
             src={imageSrc}
             alt=""
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full max-w-96 rounded-3xl bg-white px-5 py-5 text-center shadow-md">
+      <div className="z-10 w-full max-w-96 rounded-3xl bg-white px-5 py-5 text-center shadow-md">
         <ButtonField />
       </div>
     </main>

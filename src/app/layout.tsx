@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "NEXT.js 14 project for valentines day inspired by Mewtru",
   icons: "/favicon.svg",
   openGraph: {
-    // description: "Will you be my valentine?",
+    description: "Respond to my Valentine's card for a sweet surprise",
     images: [
       {
         url: "/sweet-valentine.jpg",

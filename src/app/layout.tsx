@@ -12,7 +12,13 @@ export const metadata: Metadata = {
   icons: "/favicon.svg",
   openGraph: {
     description: "Will you be my valentine?",
-    images: "/sweet-valentine.jpg",
+    images: [
+      {
+        url: "/sweet-valentine.jpg",
+        width: 700,
+        height: 400,
+      },
+    ],
   },
 };
 

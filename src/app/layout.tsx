@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Will you be my valentine?",
   authors: { name: "Totti Rdz", url: "https://github.com/totti-rdz/" },
   description: "NEXT.js 14 project for valentines day inspired by Mewtru",
+  icons: "/favicon.svg",
 };
 
 export default function RootLayout({

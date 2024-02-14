@@ -32,7 +32,7 @@ const ButtonField = ({}: Props) => {
       <div className="flex h-[100px] flex-col justify-end">
         <button
           onClick={handleYesClick}
-          className={`w-full origin-bottom rounded-[calc(1.5rem-0.5rem)] bg-pink-500 px-4 py-2 font-bold text-white shadow-lg transition-all duration-300 focus:outline-none  active:!bg-pink-700 active:shadow-inner [@media(hover:hover)]:hover:bg-pink-600  ${scaleClass}`}
+          className={`w-full origin-bottom rounded-[calc(1.5rem-0.5rem)] bg-pink-500 px-3 py-2 font-bold text-white shadow-lg transition-all duration-300 focus:outline-none  active:!bg-pink-700 active:shadow-inner [@media(hover:hover)]:hover:bg-pink-600  ${scaleClass}`}
         >
           {yesButtonLabel}
         </button>

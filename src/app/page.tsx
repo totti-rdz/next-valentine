@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex h-full flex-col items-center justify-between">
       <div className="flex flex-1 flex-col">
         <div className="mb-4">
-          <h1 className="text-center text-4xl font-bold ">
+          <h1 className="text-center text-4xl font-bold shadow-pink-500 [text-shadow:_2px_2px_2px_var(--tw-shadow-color)]">
             Will you be my valentine?
           </h1>
         </div>

@@ -24,7 +24,7 @@ export default function Home() {
   const noButtonLabel = getNoButtonLabel(noCounter);
   const scaleClass = getFromArray(scaleClasses, noCounter);
 
-  const handleYesClick = () => console.log("YES CLICKED");
+  const handleYesClick = () => router.push(`/yay?i=${noCounter}`);
   const handleNoClick = () => setNoCounter(noCounter + 1);
 
   return (

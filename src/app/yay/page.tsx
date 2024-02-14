@@ -26,7 +26,7 @@ export default function Yay() {
       onClick={handleClick}
     >
       <div className="flex flex-col">
-        <div className="mb-4 h-20">
+        <div className="mb-4 h-32">
           <H1>Okay, yay!!!! 😍</H1>
         </div>
         <div className="grid place-content-center">

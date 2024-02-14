@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-screen bg-pink-200 p-5">{children}</div>
+        <div className="h-[100svh] bg-pink-200 p-5">{children}</div>
       </body>
     </html>
   );

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   authors: { name: "Totti Rdz", url: "https://github.com/totti-rdz/" },
   description: "NEXT.js 14 project for valentines day inspired by Mewtru",
   icons: "/favicon.svg",
+  openGraph: {
+    description: "Will you be my valentine?",
+    images: "/sweet-valentine.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="h-[100svh] bg-pink-200 p-5">{children}</div>
       </body>
-      <Analytics/>
+      <Analytics />
     </html>
   );
 }

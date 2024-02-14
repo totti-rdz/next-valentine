@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ButtonField from "./(components)/ButtonField";
-import H1 from "@/components/H1";
+import Title from "./(components)/Title";
 
 const imageSrc = "https://media.tenor.com/18cWVLMRwm0AAAAi/bear.gif";
 
@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex h-full flex-col items-center justify-between">
       <div className="flex flex-1 flex-col">
         <div className="mb-4">
-          <H1>Will you be my valentine?</H1>
+          <Title />
         </div>
         <div className="-mb-4 flex flex-1 flex-col items-center justify-end">
           <Image

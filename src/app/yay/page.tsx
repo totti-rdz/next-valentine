@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import H1 from "@/components/H1";
 
 const images = [
   "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif",
@@ -26,7 +27,7 @@ export default function Yay() {
     >
       <div className="flex flex-col">
         <div className="mb-4 h-20">
-          <h1 className="text-center text-4xl font-bold ">Okay, yay!!!! 😍</h1>
+          <H1>Okay, yay!!!! 😍</H1>
         </div>
         <div className="grid place-content-center">
           <Image

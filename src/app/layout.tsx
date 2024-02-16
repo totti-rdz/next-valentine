@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   authors: { name: "Totti Rdz", url: "https://github.com/totti-rdz/" },
   description: "NEXT.js 14 project for valentines day inspired by Mewtru",
   icons: "/favicon.svg",
+  metadataBase: new URL("https://sweet-valentine.vercel.app"),
   openGraph: {
     description: "Respond to my Valentine's card for a sweet surprise",
     images: [

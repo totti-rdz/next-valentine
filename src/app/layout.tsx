@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: "Respond to my Valentine's card for a sweet surprise",
     images: [
       {
-        url: "/sweet-valentine.jpg",
+        url: "https://sweet-valentine.vercel.app/sweet-valentine.jpg",
         width: 700,
         height: 400,
       },
@@ -30,8 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-[100svh] bg-pink-200 p-5">{children}</div>
-        <div className="bg-pink-200 text-right px-2">
+        {/* maybe instead of this approach use a wrapper around children with 100svh and use empty space for footer */}
+        <div className="h-[100lvh] bg-pink-200 p-5 pb-[calc(100lvh-100svh+20px)]">
+          {children}
+        </div>
+        <div className="bg-pink-200 px-2 text-right">
           gifs by{" "}
           <a
             href="https://www.instagram.com/milkmochabear"

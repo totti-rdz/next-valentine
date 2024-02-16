@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Respond to my Valentine's card for a sweet surprise",
     images: [
       {
-        url: "https://sweet-valentine.vercel.app/sweet-valentine.jpg",
+        url: "/sweet-valentine.jpg",
         width: 700,
         height: 400,
       },

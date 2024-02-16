@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sweet-valentine.vercel.app"),
   openGraph: {
     description: "Respond to my Valentine's card for a sweet surprise",
+    type: "website",
     images: [
       {
         url: "/sweet-valentine.jpg",

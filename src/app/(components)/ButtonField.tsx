@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { getFromArray } from "@/helper/getFromArray";
 import { getNoButtonLabel } from "@/app/(helper)/getNoButtonLabel";
 import { getYesButtonLabel } from "@/app/(helper)/getYesButtonLabel";
-import { useRouter } from "next/navigation";
+import Button from "@/components/Button";
 
 const scaleClasses = [
   "h-[40px] text-base",
@@ -35,19 +36,16 @@ const ButtonField = ({}: Props) => {
   return (
     <div className="flex h-full w-full flex-col justify-center gap-4">
       <div className="flex h-[100px] flex-col justify-end">
-        <button
+        <Button
           onClick={handleYesClick}
-          className={`w-full origin-bottom rounded-[calc(1.5rem-0.5rem)] bg-pink-500 px-3 py-2 font-bold text-white shadow-lg transition-all duration-300 focus:outline-none  active:!bg-pink-700 active:shadow-inner [@media(hover:hover)]:hover:bg-pink-600  ${scaleClass}`}
+          className={`origin-bottom ${scaleClass}`}
         >
           {yesButtonLabel}
-        </button>
+        </Button>
       </div>
-      <button
-        onClick={handleNoClick}
-        className="w-full rounded-[calc(1.5rem-0.5rem)] bg-blue-700 px-3 py-2 font-bold text-white shadow-lg transition-all duration-300 focus:outline-none  active:!bg-blue-900 active:shadow-inner [@media(hover:hover)]:hover:bg-blue-800"
-      >
+      <Button onClick={handleNoClick} color="blue">
         {noButtonLabel}
-      </button>
+      </Button>
     </div>
   );
 };

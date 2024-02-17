@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import { showNotification } from "@/helper/showNotification";
 
 type Props = {
   link: string;
@@ -15,7 +16,7 @@ const ShareButton = ({ link }: Props) => {
         })
         .then(() => console.info("Successful share"))
         .catch((error) => {
-          alert("Error sharing");
+          showNotification("Error sharing", "error");
           console.error(error);
         });
     } else {

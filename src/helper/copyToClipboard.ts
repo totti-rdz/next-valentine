@@ -1,14 +1,16 @@
 "use-client";
 
+import { showNotification } from "./showNotification";
+
 export const copyToClipboard = async (text: string) => {
   if (!navigator.clipboard) {
-    alert("Clipboard not available");
+    showNotification("Clipboard not available", "error");
     return;
   }
   try {
     await navigator.clipboard.writeText(text);
-    alert("Copied");
+    showNotification("Copied", "success");
   } catch (error) {
-    alert("Failed to copy");
+    showNotification("Failed to copy", "error");
   }
 };

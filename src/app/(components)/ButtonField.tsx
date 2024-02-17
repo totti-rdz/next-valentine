@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getFromArray } from "@/helper/getFromArray";
 import { getNoButtonLabel } from "@/app/(helper)/getNoButtonLabel";
 import { getYesButtonLabel } from "@/app/(helper)/getYesButtonLabel";
@@ -26,6 +26,11 @@ const ButtonField = ({}: Props) => {
   const handleYesClick = () => router.push(`/yay?i=${noCounter}`);
   const handleNoClick = () =>
     noCounter < 3 ? setNoCounter(noCounter + 1) : router.push(`/sad`);
+
+  useEffect(() => {
+    router.prefetch("/yay");
+    router.prefetch("/sad");
+  }, [router]);
 
   return (
     <div className="flex h-full w-full flex-col justify-center gap-4">

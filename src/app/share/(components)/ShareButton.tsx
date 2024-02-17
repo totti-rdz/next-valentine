@@ -26,7 +26,7 @@ const ShareButton = ({ link }: Props) => {
         "https://" +
         (isMobileOrTablet ? "api" : "web") +
         ".whatsapp.com/send?text=" +
-        encodeURI("Join our game:") +
+        encodeURI("Happy valentines day ❤️") +
         "%0a%0a" +
         link;
       window.open(whatsappUrl, "_blank", "noreferrer");

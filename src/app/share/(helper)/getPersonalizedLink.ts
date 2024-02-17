@@ -1,5 +1,5 @@
 export const getPersonalizedLink = (name: string) => {
-  if (typeof location !== undefined) return "";
+  if (typeof location === "undefined") return "";
 
   const link =
     name && name.length !== 0
